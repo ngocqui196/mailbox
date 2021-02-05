@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Setting MailBox</title>
+</head>
+<body>
+    <h1>Settings</h1>
+
+    <form th:action="@{/setting}" th:object="${mailbox}" method="post">
+        <th:block>
+            <table>
+                <tr>
+                    <td><b>Language :</b></td>
+                    <td><select name="language">
+                        <option value="english">English</option>
+                        <option value="vietnam" selected>Viet Nam</option>
+                        <option value="france">Pháp</option>
+                        <option value="hawai">HaWai</option>
+                        <option value="japan">Nhat Ban</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><b>Page Size: </b></td>
+                    <td>Show <select name="size">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="25" selected>25</option>
+                        <option value="50">50</option>
+                        <option value="100">100</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><b>Spams filer: </b></td>
+                    <td><input type="radio" name="spamfilter" value="true">Enable spams filter</td>
+                    <td><input type="radio" name="spamfilter" value="false" checked>Enable spams filter</td>
+                </tr>
+                <tr>
+                    <td><b>Signature: </b></td>
+                    <td><textarea name="signature" cols="12" rows="3"></textarea></td>
+                </tr>
+
+            </table>
+
+        </th:block>
+
+        <input type="submit" value="Update">
+
+    </form>
+</body>
+</html>

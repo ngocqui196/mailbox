@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="language" th:field="${mailbox.language}">
+        <input type="text" name="size" th:field="${mailbox.size}">
+        <input type="text" name="spamfilter" th:value="${mailbox.spamfilter}">
+        <input type="text" name="signature" th:value="${mailbox.signature}">
+    </form>
+</body>
+</html>

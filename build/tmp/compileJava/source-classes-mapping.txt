@@ -1,0 +1,10 @@
+com/codegym/appinit/AppInit.java
+ com.codegym.appinit.AppInit
+com/codegym/appinit/AppConfig.java
+ com.codegym.appinit.AppConfig
+com/codegym/model/MailBox.java
+ com.codegym.model.MailBox
+com/codegym/service/MailBoxService.java
+ com.codegym.service.MailBoxService
+com/codegym/controller/ControllerMailbox.java
+ com.codegym.controller.ControllerMailbox
